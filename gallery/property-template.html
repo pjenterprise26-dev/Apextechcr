@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Property Media | Apex Technologies</title>
+<meta name="description" content="Property photography and video by Apex Technologies in Southern Costa Rica.">
+<meta name="theme-color" content="#020b18">
+<style>
+:root{--bg:#020b18;--panel:#08233d;--cyan:#16d9ff;--white:#f4f8ff;--muted:#b5c7d9}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--white);font:16px/1.6 system-ui,Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1200px,92%);margin:auto}
+header,footer{background:#010812;border-bottom:1px solid #16d9ff55}header{padding:18px 0}footer{border-top:1px solid #16d9ff55;border-bottom:0;padding:28px 0;margin-top:55px;color:var(--muted)}
+.brand{font-weight:900;letter-spacing:.06em}.brand small{display:block;color:var(--cyan);font-size:.7rem;letter-spacing:.2em}
+.hero{padding:65px 0;background:radial-gradient(circle at 85% 10%,#16d9ff33,transparent 35%),linear-gradient(120deg,#031326,#06365a)}.eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.18em}.hero h1{font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.1;margin:12px 0}.hero p{color:#d4e2f0;max-width:700px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:35px 0}.gallery img{width:100%;height:270px;object-fit:cover;border-radius:16px;border:1px solid #16d9ff44;background:#08233d}.video{width:100%;max-width:900px;display:block;border:1px solid #16d9ff44;border-radius:18px;margin:25px auto;background:#000}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}.btn{display:inline-block;padding:12px 22px;border-radius:28px;background:linear-gradient(90deg,#0a9ff4,#16d9ff);color:#001425;font-weight:900}.btn.alt{background:#08233d;color:white;border:1px solid #16d9ff}
+@media(max-width:800px){.gallery{grid-template-columns:repeat(2,1fr)}}@media(max-width:550px){.gallery{grid-template-columns:1fr}.gallery img{height:auto;max-height:350px}.hero{padding-top:50px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="/">APEX TECHNOLOGIES<small>YOUR TECHNOLOGY PARTNER IN COSTA RICA</small></a></div></header>
+<main>
+<section class="hero"><div class="wrap"><div class="eyebrow">PROPERTY PHOTOGRAPHY / VIDEO</div><h1>PROPERTY TITLE</h1><p>PROPERTY DESCRIPTION — location, highlights and details supplied by the client.</p><div class="actions"><a class="btn" id="share" href="#">Share this gallery</a><a class="btn alt" href="https://wa.me/50663842814">Contact Apex Technologies</a></div></div></section>
+<div class="wrap">
+<div class="gallery">
+<!-- Replace these image paths with the edited images for this property. Example: images/property-name/photo-01.jpg -->
+<img src="../images/property-placeholder-1.jpg" alt="Property photograph 1">
+<img src="../images/property-placeholder-2.jpg" alt="Property photograph 2">
+<img src="../images/property-placeholder-3.jpg" alt="Property photograph 3">
+</div>
+<!-- Optional: replace the video source with a compressed MP4 uploaded to this property folder. -->
+<!-- <video class="video" controls preload="metadata"><source src="property-video.mp4" type="video/mp4"></video> -->
+</div>
+</main>
+<footer><div class="wrap">© 2026 Apex Technologies · Ojochal, Costa Rica · <a href="mailto:Pjenterprise26@gmail.com">Pjenterprise26@gmail.com</a></div></footer>
+<script>
+document.getElementById('share').addEventListener('click',async function(e){e.preventDefault();const url=location.href;if(navigator.share){try{await navigator.share({title:document.title,url});}catch(err){}}else if(navigator.clipboard){await navigator.clipboard.writeText(url);this.textContent='Link copied!';}else{prompt('Copy this property link:',url);}});
+</script>
+</body></html>
