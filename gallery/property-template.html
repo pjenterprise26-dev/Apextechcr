@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Property Media | Apex Technologies</title>
+<title>Property Photography & Video | Apex Technologies</title>
 <meta name="description" content="Property photography and video by Apex Technologies in Southern Costa Rica.">
 <meta name="theme-color" content="#020b18">
 <style>
@@ -19,19 +19,23 @@ header,footer{background:#010812;border-bottom:1px solid #16d9ff55}header{paddin
 <body>
 <header><div class="wrap"><a class="brand" href="/">APEX TECHNOLOGIES<small>YOUR TECHNOLOGY PARTNER IN COSTA RICA</small></a></div></header>
 <main>
-<section class="hero"><div class="wrap"><div class="eyebrow">PROPERTY PHOTOGRAPHY / VIDEO</div><h1>PROPERTY TITLE</h1><p>PROPERTY DESCRIPTION — location, highlights and details supplied by the client.</p><div class="actions"><a class="btn" id="share" href="#">Share this gallery</a><a class="btn alt" href="https://wa.me/50663842814">Contact Apex Technologies</a></div></div></section>
+<section class="hero"><div class="wrap"><div class="eyebrow">PROPERTY PHOTOGRAPHY / VIDEO</div><h1>REPLACE WITH PROPERTY TITLE</h1><p>REPLACE WITH PROPERTY DESCRIPTION — location, highlights and details.</p><div class="actions"><a class="btn" id="share" href="#">Share this gallery</a><a class="btn alt" href="https://wa.me/50663842814">Contact Apex Technologies</a></div></div></section>
 <div class="wrap">
 <div class="gallery">
-<!-- Replace these image paths with the edited images for this property. Example: images/property-name/photo-01.jpg -->
-<img src="../images/property-placeholder-1.jpg" alt="Property photograph 1">
-<img src="../images/property-placeholder-2.jpg" alt="Property photograph 2">
-<img src="../images/property-placeholder-3.jpg" alt="Property photograph 3">
+<!-- Save edited photos in this same property folder and use these filenames, or change the paths. -->
+<img src="photo-01.jpg" alt="Property photo 1">
+<img src="photo-02.jpg" alt="Property photo 2">
+<img src="photo-03.jpg" alt="Property photo 3">
+<img src="photo-04.jpg" alt="Property photo 4">
+<img src="photo-05.jpg" alt="Property photo 5">
+<img src="photo-06.jpg" alt="Property photo 6">
 </div>
-<!-- Optional: replace the video source with a compressed MP4 uploaded to this property folder. -->
-<!-- <video class="video" controls preload="metadata"><source src="property-video.mp4" type="video/mp4"></video> -->
+<!-- Optional video: place a compressed MP4 in this same folder and uncomment the block below.
+<video class="video" controls preload="metadata"><source src="property-video.mp4" type="video/mp4"></video>
+-->
 </div>
 </main>
-<footer><div class="wrap">© 2026 Apex Technologies · Ojochal, Costa Rica · <a href="mailto:Pjenterprise26@gmail.com">Pjenterprise26@gmail.com</a></div></footer>
+<footer><div class="wrap">© 2026 Apex Technologies · Ojochal, Costa Rica · <a href="mailto:pjenterprise26@gmail.com">pjenterprise26@gmail.com</a></div></footer>
 <script>
 document.getElementById('share').addEventListener('click',async function(e){e.preventDefault();const url=location.href;if(navigator.share){try{await navigator.share({title:document.title,url});}catch(err){}}else if(navigator.clipboard){await navigator.clipboard.writeText(url);this.textContent='Link copied!';}else{prompt('Copy this property link:',url);}});
 </script>
